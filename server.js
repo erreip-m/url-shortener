@@ -15,7 +15,7 @@ const { Schema } = mongoose
 
 let mw = bodyParser.urlencoded({extended: false})
 
-process.env.MONGO_URI='mongodb+srv://Me:password2707@clustertest.6tjw2.mongodb.net/ClusterTest?retryWrites=true&w=majority'
+process.env.MONGO_URI=''
 mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
 
 const urlSchema = new Schema({
